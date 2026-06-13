@@ -1,0 +1,5 @@
+# Prevent people from browsing your folder structures
+Options -Indexes
+
+# Turn on the rewrite engine
+RewriteEngine On
