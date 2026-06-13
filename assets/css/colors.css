@@ -1,0 +1,28 @@
+:root {
+    --color_nav_bg: linear-gradient(135deg, #180E0D, #3D1F1A);
+    --color_nav_links: #f6f4ff;
+    --color_nav_links_active: #B36A5B;
+    --color_main_bg: #FAF9F6;
+    --color_card_border: #dfdfe2;
+    --color_font_dark: #18191a;
+    /* --color_sec_hero: linear-gradient(135deg, #0d0e0f, #1c1d1e, #0d0e0f); */
+    --color_sec_hero: linear-gradient(to bottom, #F9F9F8, #ECECE9);
+    --color_sec_dark: #18191a;
+    --color_sec_light: #E6E4E0;
+    --color_sec_highlight: #2fa062;
+    --color_sec_highlight_a: #38db81;
+    --color_scrollbar: #9d5242;
+    --color_card_role: #f3ddd9;
+    --color_card_role_text: #a94d4d;
+    --color_sec_highlight_b: #404040;
+    --color_sec_highlight_c: #180E0D;
+    --color_sec_text_light: #f6f4ff;
+    --color_sec_text_dark: #0d0e0f;
+    --color_sec_text_light_p: #dcdcdc;
+    --color_sec_text_dark_p: #1f2022;
+    --color_sec_content_box: #d9d6d0;
+    --color_font_gray: #bababa;
+    --color_font_gray2:#999999;
+    --color_font_gray3:#191919;
+    --color_footer_button:#291816;
+}

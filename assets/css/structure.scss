@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Google Sans;
+}
+
+html {
+    overflow-x: hidden;
+    background: var(--color_sec_hero); 
+}
+
+body {
+    background: var(--color_sec_hero); 
+    /* cursor: url("../img/cursor.png") 12 12, auto; */
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    color: var(--color_font_gray2);
+    opacity: 0.1;
+    margin: 1rem 0;
+}
+
+nav {
+    background: var(--color_nav_bg);
+    width: 90%;
+    max-width: 87.5rem;
+    margin: 1.2rem auto 0 auto; 
+    border-radius: 624.94rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .94rem 3rem;
+    position: sticky;
+    top: 1.2rem;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+nav .logo {
+    padding-top: .5rem;
+}
+nav .logo img {
+    height: 2rem;
+    width: auto;
+}
+
+nav .links ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+nav .links ul li {
+    list-style: none;
+}
+
+nav .links ul li a {
+    text-decoration: none;
+    color: var(--color_nav_links);
+    font-size: 1rem;
+    
+    position: relative; 
+    padding-bottom: 8px; 
+}
+
+nav .links ul li a.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    
+    width: 6px;
+    height: 6px;
+    background-color: var(--color_nav_links_active); 
+    border-radius: 50%; 
+}
+
+footer {
+    background: var(--color_nav_bg);
+    padding: 1.75rem 6rem 1.25rem;
+}
+
+.footer_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo nav connect work";
+    grid-gap: 2rem;
+}
+
+    .footer_logo {
+        grid-area: logo;
+        margin-right: 2rem;
+    }
+
+    .footer_logo img {
+        height: 2rem;
+        width: auto;
+    }
+
+    .footer_navigation {
+        grid-area: nav;
+    }
+
+    .footer_connect {
+        grid-area: connect;
+    }
+
+    .footer_work {
+        grid-area: work;
+    }
+
+    .footer_navigation p, .footer_connect p, .footer_work p {
+        margin: .3rem 0;
+        color: var(--color_font_gray);
+        letter-spacing: .1rem;
+        font-size: .94rem;
+    }
+
+    .footer_logo p {
+        margin: .3rem 0;
+        color: var(--color_font_gray);
+        font-size: .94rem;
+    }
+
+    .footer_navigation ul li, .footer_connect ul li {
+        list-style: none;
+        padding: .19rem 0;
+    }
+
+    .footer_navigation ul li a, .footer_connect ul li a {
+        color: var(--color_font_gray2);
+        transition: color 0.3s ease;
+        font-size: .94rem;
+    }
+
+    .footer_navigation ul li a:hover, .footer_connect ul li a:hover {
+        color: var(--color_main_bg);
+    }
+
+    .footer_bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer_bottom p {
+        color: var(--color_font_gray2);
+        font-size: .88rem;
+    }
+
+    .footer_bottom button {
+        cursor: pointer;
+        color: var(--color_font_gray2);
+        background-color: var(--color_footer_button);
+        border: none;
+        font-size: .63rem;
+        font-weight: 400;
+        border-radius: .31rem;
+        padding: .63rem .44rem .31rem;
+        transition: color 0.3s ease;
+    }
+
+    .footer_bottom button:hover {
+        color: var(--color_main_bg);
+    }
+
+.p_highlighted {
+    color: var(--color_sec_highlight);
+    padding: 10.08px 0;
+    font-weight: 500;
+    letter-spacing: 3.2px;
+}
+
+.p_highlighted_dark {
+    color: var(--color_font_dark);
+    padding: 10.08px 0;
+    letter-spacing: 3.2px;
+    font-weight: 450;
+}
+
+.p_normal {
+    color: var(--color_sec_text_dark_p);
+    padding: 4.96px 0;
+}
+
+
+html::-webkit-scrollbar {
+    width: 5px;              
+    height: 5px;   
+    cursor: pointer;           
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--color_nav_bg); 
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--color_scrollbar);
+    cursor: pointer;
+}
